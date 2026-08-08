@@ -1,16 +1,21 @@
 # 🎓 Student Management System
 
-A console-based **Student Management System built with Python** using Object-Oriented Programming (OOP), JSON file handling, authentication, data validation, CRUD operations, and CSV export.
+A **Student Management System built with Python** using Object-Oriented Programming (OOP), JSON file handling, authentication, data validation, CRUD operations, CSV export, and a graphical user interface (GUI).
 
 ---
 
 ## 📌 Project Overview
 
-The **Student Management System** is a Python-based application designed to manage student records efficiently through a simple command-line interface.
+The **Student Management System** is a Python-based application designed to manage student records efficiently.
+
+The project currently provides both:
+
+* 🖥️ **Console-Based Interface**
+* 🖼️ **Graphical User Interface (GUI)**
 
 The system provides separate **Admin** and **User** functionality. Admins can manage student records, while users can log in and access student information.
 
-This project was developed to gain practical experience with **Python, OOP, file handling, JSON, CSV, exception handling, authentication, and modular programming**.
+This project was developed to gain practical experience with **Python, OOP, file handling, JSON, CSV, exception handling, authentication, modular programming, and GUI development**.
 
 ---
 
@@ -50,7 +55,31 @@ Admin can:
 * Automatic Student ID generation
 * Read and write JSON data
 
-### 🛡️ Security
+### 🖼️ Graphical User Interface
+
+The project also includes a GUI version of the Student Management System.
+
+The GUI provides a more user-friendly interface for interacting with the application instead of using only the command line.
+
+The GUI version includes functionality for:
+
+* User Login
+* Admin Login
+* Student Management
+* Student Search
+* Student Records
+* Data Operations
+* Authentication
+
+The GUI application can be launched using:
+
+```bash
+python main_gui.py
+```
+
+---
+
+## 🛡️ Security
 
 The system includes basic security mechanisms:
 
@@ -110,6 +139,7 @@ The system validates:
 * **File Handling**
 * **Exception Handling**
 * **Modular Programming**
+* **GUI Development**
 
 The current version uses Python's built-in libraries, so no external packages are required.
 
@@ -135,6 +165,7 @@ This project applies several important Python OOP concepts:
 Student-Management-System/
 │
 ├── main.py
+├── main_gui.py
 ├── Student.py
 ├── StudentManager.py
 ├── auth.py
@@ -154,6 +185,8 @@ Student-Management-System/
 ---
 
 ## 🔄 Application Flow
+
+### 🖥️ Console Version
 
 ```text
 Start Application
@@ -186,6 +219,27 @@ Start Application
        └── Exit
 ```
 
+### 🖼️ GUI Version
+
+```text
+Run main_gui.py
+       │
+       ▼
+    GUI Menu
+       │
+       ├── Admin Login
+       │      │
+       │      └── Student Management
+       │
+       ├── User Login
+       │      │
+       │      └── Student Information
+       │
+       ├── Sign Up
+       │
+       └── Forgot Password
+```
+
 ---
 
 ## ▶️ How to Run
@@ -193,7 +247,7 @@ Start Application
 ### 1. Clone the Repository
 
 ```bash
-git clone YOUR_REPOSITORY_URL
+git clone https://github.com/aliadrees/Student-Management-System.git
 ```
 
 ### 2. Open the Project Directory
@@ -202,11 +256,19 @@ git clone YOUR_REPOSITORY_URL
 cd Student-Management-System
 ```
 
-### 3. Run the Application
+### 3. Run Console Version
 
 ```bash
 python main.py
 ```
+
+### 4. Run GUI Version
+
+```bash
+python main_gui.py
+```
+
+> **Recommended:** If you want to use the graphical interface, run `main_gui.py`.
 
 ---
 
@@ -259,7 +321,7 @@ This allows the data to be opened and analyzed using spreadsheet or data-analysi
 
 Planned improvements for future versions include:
 
-* 🖥️ GUI frontend
+* 🖥️ Improved GUI frontend
 * 🗄️ MySQL database integration
 * 🔐 Password hashing
 * 🔑 Improved authentication
@@ -289,6 +351,7 @@ This project helped strengthen practical knowledge of:
 * Authentication
 * Input Validation
 * Modular Programming
+* GUI Development
 * Basic Data Management
 
 ---
@@ -312,11 +375,11 @@ COMSATS University Islamabad, Sahiwal Campus
 
 ## 📌 Project Status
 
-**Current Status: Completed — Console-Based Version**
+**Current Status: Completed — Console + GUI Version**
 
-The current version is a Python console application.
+The project currently includes both a **Python console application** and a **GUI application**.
 
-Future versions may include a **GUI frontend, MySQL database, and additional security features**.
+Future versions may include a **MySQL database, improved security, web-based interface, and advanced data analysis features**.
 
 ---
 
