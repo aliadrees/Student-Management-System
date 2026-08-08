@@ -27,8 +27,8 @@ import theme as T
 # Paths / constants  (same filenames as the original console app)
 # ---------------------------------------------------------------------------
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-STUDENT_FILE = os.path.join(BASE_DIR, "Student.json")
-USER_FILE = os.path.join(BASE_DIR, "data.json")
+STUDENT_FILE = os.path.join(BASE_DIR, "data/Student.json")
+USER_FILE = os.path.join(BASE_DIR, "data/data.json")
 
 GENDERS = ["Male", "Female", "Other"]
 DEPARTMENTS = ["Software Engineering", "Computer Science",
