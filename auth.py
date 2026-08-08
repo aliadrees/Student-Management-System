@@ -7,7 +7,7 @@ def login():
  password=input("\nEnter your password:")
  try:
    
-  with open("data.json", "r") as f:
+  with open("data/data.json", "r") as f:
     users = json.load(f)
  
 
@@ -59,7 +59,7 @@ def sigin():
     }
 
     try:
-        with open("data.json", "r") as f:
+        with open("data/data.json", "r") as f:
             users = json.load(f)
 
     except (FileNotFoundError, json.JSONDecodeError):
