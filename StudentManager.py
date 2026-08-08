@@ -105,7 +105,7 @@ class StudentManager:
     def viewStudent(self):
           try:
                 id=int(input("\nEnter your Student id:"))
-                with open("Student.json","r")as f:
+                with open("data/Student.json","r")as f:
                       Students=json.load(f)
                       for student in Students:
                             if student["student_id"]==id:
@@ -148,7 +148,7 @@ class StudentManager:
                             if id==student["student_id"]:
                               students.remove(student)
                               break
-                with open("Student.json","w") as f:
+                with open("data/Student.json","w") as f:
                       json.dump(students,f,indent=4)
       except FileNotFoundError:
             print("Sorry! File not found")              
