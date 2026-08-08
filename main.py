@@ -1,3 +1,5 @@
+from pathlib import Path
+Path("data").mkdir(exist_ok=True)
 from auth import sigin,login
 from forgot import forgot
 from StudentManager import StudentManager
