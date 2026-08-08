@@ -16,7 +16,7 @@ class Student:
 
     def get_next_id(self):
         try:
-            with open("Student.json", "r") as f:
+            with open("data/Student.json", "r") as f:
                 students = json.load(f)
 
             if not students:
