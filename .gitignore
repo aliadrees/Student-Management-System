@@ -1,0 +1,8 @@
+data.json
+Student.json
+Students.csv
+
+__pycache__/
+*.pyc
+.venv/
+.env
